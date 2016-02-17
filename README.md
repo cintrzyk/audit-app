@@ -1,7 +1,6 @@
 # Audit
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app was built to audit, and remediate, security configuration settings.
 
 ## Prerequisites
 
@@ -22,8 +21,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* `ember electron`
 
 ### Code Generators
 
@@ -31,22 +29,19 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
+* `ember electron:test`
 
 ### Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+* `ember electron:package` (production)
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+TODO
 
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* [ember-electron](https://github.com/felixrieseberg/ember-electron)
+* [electron](http://electron.atom.io/)

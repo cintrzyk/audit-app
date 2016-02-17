@@ -5,9 +5,9 @@ export default Ember.Component.extend({
   checked: false,
   label: Ember.computed('checked', function() {
     if (this.get('checked')) {
-      return 'On'
+      return 'On';
     }
-    return 'Off'
+    return 'Off';
   }),
 
   change() {

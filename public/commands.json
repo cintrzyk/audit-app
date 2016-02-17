@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Require a password to wake the computer from sleep or screen saver",
+    "character": "toggle",
+    "command": "wakeComputer"
+  },
+  {
+    "title": "Ensure screen locks immediately when requested",
+    "description": "When off delayed time will be set to 300",
+    "character": "toggle",
+    "command": "lockScreen"
+  }
+]

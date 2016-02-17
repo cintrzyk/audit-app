@@ -1,0 +1,13 @@
+{{#each tabs as |tab|}}
+  <a class="item {{if tab.active 'active'}}" {{action 'tabClicked' tab}}>
+    {{tab.name}}
+  </a>
+{{/each}}
+<div class="right menu">
+  <div class="ui search">
+    <div class="ui icon input">
+      {{input value=term class="prompt" type="text" placeholder="Search"}}
+      <i class="search icon"></i>
+    </div>
+  </div>
+</div>

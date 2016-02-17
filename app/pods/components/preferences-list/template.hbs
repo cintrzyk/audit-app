@@ -1,0 +1,36 @@
+{{#each items as |item|}}
+  <div class="ui {{if item.enabled 'green' 'red'}} {{if item.loading 'loading'}} segment">
+    <div class="ui grid">
+      <div class="twelve wide column">
+        <h3 class="ui header">{{item.title}}</h3>
+      </div>
+      <div class="four wide column">
+        <div class="pull-right">
+          {{ui-toggle item=item checked=item.enabled action="toggle"}}
+        </div>
+      </div>
+    </div>
+    <p class="description">{{html-safe item.description}}</p>
+  </div>
+{{else}}
+  {{#if isNoItemsMsg}}
+    <div class="ui info icon message">
+      <i class="info icon"></i>
+      <div class="content">
+        <div class="header">
+          No data
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <div class="ui warning icon message">
+      <i class="meh icon"></i>
+      <div class="content">
+        <div class="header">
+          No results for "{{searchTerm}}"
+        </div>
+        <p>Try with different query</p>
+      </div>
+    </div>
+  {{/if}}
+{{/each}}

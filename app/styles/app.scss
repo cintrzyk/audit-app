@@ -1,0 +1,33 @@
+$red: #db2828;
+
+body {
+  background-color: #f5f5f5;
+}
+
+body > .ember-view, .main-grid {
+  height: 100%;
+}
+
+.ui.card {
+  width: 100%;
+}
+
+.pull-right {
+  float: right;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.ui.steps .step.error .title {
+  color: $red;
+}
+
+.ui.search {
+  margin-bottom: 10px;
+}
+
+.ui.segment:last-child {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,21 @@
+<div class="completed step">
+  <i class="search icon"></i>
+  <div class="content">
+    <div class="title">System scan</div>
+  </div>
+</div>
+{{#if success}}
+  <div class="completed step">
+    <i class="checkmark icon"></i>
+    <div class="content">
+      <div class="title">Good job!</div>
+    </div>
+  </div>
+{{else}}
+  <div class="active error step">
+    <i class="warning icon red"></i>
+    <div class="content">
+      <div class="title">Found {{issues.length}} security issues</div>
+    </div>
+  </div>
+{{/if}}
